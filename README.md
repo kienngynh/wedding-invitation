@@ -1,5 +1,12 @@
 # Modern Wedding Invitation Website
 
+![Website Preview](image.png)
+
+![License](https://img.shields.io/badge/license-Custom-blue)
+![Version](https://img.shields.io/badge/version-1.0.0-green)
+![PHP](https://img.shields.io/badge/PHP-7.4+-purple)
+![MySQL](https://img.shields.io/badge/MySQL-5.7+-orange)
+
 A beautiful, responsive wedding invitation website created as a commissioned project. This elegant digital invitation features a countdown timer, photo gallery with lightbox, Google Maps integration, and a classy design perfect for modern couples.
 
 ## Overview
