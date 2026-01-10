@@ -187,7 +187,7 @@
       z-index: 5;
       padding: 20px;
       text-align: center;
-      margin-top: 10px;
+      margin-top: 50px;
     }
 
     .welcome h1 {
@@ -435,24 +435,6 @@
                border: 4px solid #d4a5a5;
                object-fit: cover;
              " onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-        <!-- Placeholder nếu chưa có ảnh -->
-        <div style="
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          width: 100%;
-          aspect-ratio: 2656 / 3984;
-          background: linear-gradient(135deg, #fce4ec 0%, #f8bbd9 100%);
-          border-radius: 20px;
-          border: 4px dashed #d4a5a5;
-          color: #b76e79;
-          font-family: 'Be Vietnam Pro', sans-serif;
-        ">
-          <div style="font-size: 48px;">📷</div>
-          <div style="font-size: 14px; margin-top: 10px;">Chèn ảnh tại đây</div>
-          <div style="font-size: 12px; color: #d4a5a5;">(2656 x 3984 px)</div>
-        </div>
       </div>
 
       <!-- Names Section -->
@@ -665,11 +647,17 @@
 
         <!-- PHẦN 1: Lần đầu gặp gỡ -->
         <div class="row align-items-center" style="margin-bottom: 60px; position: relative;">
-          <!-- Left: Image -->
+          <!-- Left: Icon + Title + Date -->
           <div class="col-md-5 text-center" data-aos="fade-right" data-aos-duration="1000">
             <div
-              style="width: 100%; max-width: 300px; margin: 0 auto; border-radius: 15px; overflow: hidden; border: 4px solid #d4a5a5; box-shadow: 0 8px 20px rgba(212, 165, 165, 0.3);">
-              <img src="resources/ABC01122.png" alt="Lần đầu gặp gỡ" style="width: 100%; height: auto; display: block;">
+              style="background: linear-gradient(135deg, #fce4ec 0%, #f8bbd9 100%); border-radius: 20px; padding: 30px 20px; box-shadow: 0 8px 25px rgba(212, 165, 165, 0.3); border: 2px solid #d4a5a5;">
+              <div style="font-size: 60px; margin-bottom: 15px;">✨</div>
+              <div style="font-family: 'Great Vibes', cursive; font-size: 32px; color: #b76e79; margin-bottom: 10px;">
+                Lần Đầu Gặp Gỡ</div>
+              <div
+                style="font-family: 'Be Vietnam Pro', sans-serif; font-size: 16px; color: #8b5a5a; font-weight: 600;">
+                📅 Năm 2020
+              </div>
             </div>
           </div>
           <!-- Center: Dot -->
@@ -682,14 +670,8 @@
           <div class="col-md-5" data-aos="fade-left" data-aos-duration="1000">
             <div
               style="background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-radius: 20px; padding: 25px; box-shadow: 0 10px 30px rgba(139, 90, 90, 0.15); border: 1px solid rgba(212, 165, 165, 0.3);">
-              <div
-                style="font-family: 'Be Vietnam Pro', sans-serif; font-size: 14px; color: #8b5a5a; font-weight: 600; margin-bottom: 5px;">
-                📅 Năm 2020
-              </div>
-              <div style="font-family: 'Great Vibes', cursive; font-size: 28px; color: #b76e79; margin-bottom: 10px;">💕
-                Lần Đầu Gặp Gỡ</div>
               <p
-                style="font-family: 'Be Vietnam Pro', sans-serif; font-size: 14px; color: #5a3a3a; line-height: 1.8; margin: 0;">
+                style="font-family: 'Be Vietnam Pro', sans-serif; font-size: 15px; color: #5a3a3a; line-height: 1.8; margin: 0;">
                 Hữu Kiên và Đào Huệ gặp nhau qua sự giới thiệu của bạn bè. Từ những cuộc trò chuyện đầu tiên, họ nhận ra
                 có điều gì đó đặc biệt giữa hai người...
               </p>
@@ -703,14 +685,8 @@
           <div class="col-md-5 order-2 order-md-1" data-aos="fade-right" data-aos-duration="1000">
             <div
               style="background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-radius: 20px; padding: 25px; box-shadow: 0 10px 30px rgba(139, 90, 90, 0.15); border: 1px solid rgba(212, 165, 165, 0.3);">
-              <div
-                style="font-family: 'Be Vietnam Pro', sans-serif; font-size: 14px; color: #8b5a5a; font-weight: 600; margin-bottom: 5px;">
-                📅 Năm 2022
-              </div>
-              <div style="font-family: 'Great Vibes', cursive; font-size: 28px; color: #c9a86c; margin-bottom: 10px;">💑
-                Lựa Chọn Nắm Tay</div>
               <p
-                style="font-family: 'Be Vietnam Pro', sans-serif; font-size: 14px; color: #5a3a3a; line-height: 1.8; margin: 0;">
+                style="font-family: 'Be Vietnam Pro', sans-serif; font-size: 15px; color: #5a3a3a; line-height: 1.8; margin: 0;">
                 Tình yêu không phải lúc nào cũng suôn sẻ như trong phim. Họ đã trải qua nhiều thử thách, nhưng cuối cùng
                 vẫn quyết định nắm tay nhau, cùng bước tiếp...
               </p>
@@ -722,24 +698,34 @@
               style="width: 20px; height: 20px; background: #c9a86c; border: 4px solid #fff; border-radius: 50%; margin: 0 auto; box-shadow: 0 2px 10px rgba(201, 168, 108, 0.4);">
             </div>
           </div>
-          <!-- Right: Image -->
+          <!-- Right: Icon + Title + Date -->
           <div class="col-md-5 order-3 order-md-3 text-center" data-aos="fade-left" data-aos-duration="1000">
             <div
-              style="width: 100%; max-width: 300px; margin: 0 auto; border-radius: 15px; overflow: hidden; border: 4px solid #c9a86c; box-shadow: 0 8px 20px rgba(201, 168, 108, 0.3);">
-              <img src="resources/ABC01188.png" alt="Lựa chọn nắm tay"
-                style="width: 100%; height: auto; display: block;">
+              style="background: linear-gradient(135deg, #fff8e1 0%, #ffe082 100%); border-radius: 20px; padding: 30px 20px; box-shadow: 0 8px 25px rgba(201, 168, 108, 0.3); border: 2px solid #c9a86c;">
+              <div style="font-size: 60px; margin-bottom: 15px;">💑</div>
+              <div style="font-family: 'Great Vibes', cursive; font-size: 32px; color: #c9a86c; margin-bottom: 10px;">
+                Lựa Chọn Nắm Tay</div>
+              <div
+                style="font-family: 'Be Vietnam Pro', sans-serif; font-size: 16px; color: #8b6914; font-weight: 600;">
+                📅 Năm 2022
+              </div>
             </div>
           </div>
         </div>
 
         <!-- PHẦN 3: Lựa chọn đồng hành -->
         <div class="row align-items-center" style="margin-bottom: 20px; position: relative;">
-          <!-- Left: Image -->
+          <!-- Left: Icon + Title + Date -->
           <div class="col-md-5 text-center" data-aos="fade-right" data-aos-duration="1000">
             <div
-              style="width: 100%; max-width: 300px; margin: 0 auto; border-radius: 15px; overflow: hidden; border: 4px solid #8b5a5a; box-shadow: 0 8px 20px rgba(139, 90, 90, 0.3);">
-              <img src="resources/ABC01035.png" alt="Lựa chọn đồng hành"
-                style="width: 100%; height: auto; display: block;">
+              style="background: linear-gradient(135deg, #e8d4d4 0%, #d4a5a5 100%); border-radius: 20px; padding: 30px 20px; box-shadow: 0 8px 25px rgba(139, 90, 90, 0.3); border: 2px solid #8b5a5a;">
+              <div style="font-size: 60px; margin-bottom: 15px;">💒</div>
+              <div style="font-family: 'Great Vibes', cursive; font-size: 32px; color: #8b5a5a; margin-bottom: 10px;">
+                Lựa Chọn Đồng Hành</div>
+              <div
+                style="font-family: 'Be Vietnam Pro', sans-serif; font-size: 16px; color: #5a3a3a; font-weight: 600;">
+                📅 Năm 2024
+              </div>
             </div>
           </div>
           <!-- Center: Dot -->
@@ -752,14 +738,8 @@
           <div class="col-md-5" data-aos="fade-left" data-aos-duration="1000">
             <div
               style="background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-radius: 20px; padding: 25px; box-shadow: 0 10px 30px rgba(139, 90, 90, 0.15); border: 1px solid rgba(212, 165, 165, 0.3);">
-              <div
-                style="font-family: 'Be Vietnam Pro', sans-serif; font-size: 14px; color: #8b5a5a; font-weight: 600; margin-bottom: 5px;">
-                📅 Năm 2024
-              </div>
-              <div style="font-family: 'Great Vibes', cursive; font-size: 28px; color: #8b5a5a; margin-bottom: 10px;">💒
-                Lựa Chọn Đồng Hành</div>
               <p
-                style="font-family: 'Be Vietnam Pro', sans-serif; font-size: 14px; color: #5a3a3a; line-height: 1.8; margin: 0;">
+                style="font-family: 'Be Vietnam Pro', sans-serif; font-size: 15px; color: #5a3a3a; line-height: 1.8; margin: 0;">
                 Sau nhiều năm bên nhau, họ quyết định tiến đến hôn nhân. Đây là minh chứng rằng tình yêu đích thực luôn
                 chiến thắng mọi khó khăn...
               </p>
@@ -793,16 +773,20 @@
               <h4 style="font-family: 'Dancing Script', cursive; font-size: 24px; color: #5a8a9a; margin-bottom: 15px;">
                 Gửi lời chúc tới Chú Rể
               </h4>
-              <!-- Placeholder QR -->
+              <!-- QR Code Chú Rể -->
+              <img src="resources/qr-groom.jpg" alt="QR Code Chú Rể"
+                style="width: 200px; height: 200px; margin: 0 auto; border-radius: 10px; object-fit: contain;"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <!-- Placeholder nếu chưa có ảnh -->
               <div
-                style="width: 200px; height: 200px; background: #e3f2fd; margin: 0 auto; display: flex; align-items: center; justify-content: center; border-radius: 10px;">
-                <span style="color: #5a8a9a; font-size: 14px;">QR Code Chú Rể</span>
+                style="display: none; width: 200px; height: 200px; background: #e3f2fd; margin: 0 auto; align-items: center; justify-content: center; border-radius: 10px;">
+                <span style="color: #5a8a9a; font-size: 14px;">Chèn QR tại đây</span>
               </div>
               <div
                 style="margin-top: 15px; font-family: 'Be Vietnam Pro', sans-serif; font-size: 14px; color: #5a3a3a;">
-                <strong>Nguyễn Hữu Kiên</strong><br>
-                <span style="font-size: 13px; color: #777;">Ngân hàng: ...</span><br>
-                <span style="font-size: 13px; color: #777;">STK: ...</span>
+                <strong>NGUYEN HUU KIEN</strong><br>
+                <span style="font-size: 13px; color: #777;">Ngân hàng: Vietcombank</span><br>
+                <span style="font-size: 13px; color: #777;">STK: 0011004438834</span>
               </div>
             </div>
           </div>
@@ -814,16 +798,20 @@
               <h4 style="font-family: 'Dancing Script', cursive; font-size: 24px; color: #b76e79; margin-bottom: 15px;">
                 Gửi lời chúc tới Cô Dâu
               </h4>
-              <!-- Placeholder QR -->
+              <!-- QR Code Cô Dâu -->
+              <img src="resources/qr-bride.jpg" alt="QR Code Cô Dâu"
+                style="width: 200px; height: 200px; margin: 0 auto; border-radius: 10px; object-fit: contain;"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <!-- Placeholder nếu chưa có ảnh -->
               <div
-                style="width: 200px; height: 200px; background: #fce4ec; margin: 0 auto; display: flex; align-items: center; justify-content: center; border-radius: 10px;">
-                <span style="color: #b76e79; font-size: 14px;">QR Code Cô Dâu</span>
+                style="display: none; width: 200px; height: 200px; background: #fce4ec; margin: 0 auto; align-items: center; justify-content: center; border-radius: 10px;">
+                <span style="color: #b76e79; font-size: 14px;">Chèn QR tại đây</span>
               </div>
               <div
                 style="margin-top: 15px; font-family: 'Be Vietnam Pro', sans-serif; font-size: 14px; color: #5a3a3a;">
-                <strong>Đào Huệ</strong><br>
-                <span style="font-size: 13px; color: #777;">Ngân hàng: ...</span><br>
-                <span style="font-size: 13px; color: #777;">STK: ...</span>
+                <strong>DAO THI HUE</strong><br>
+                <span style="font-size: 13px; color: #777;">Ngân hàng: Vietcombank</span><br>
+                <span style="font-size: 13px; color: #777;">STK: 0731000649158</span>
               </div>
             </div>
           </div>
