@@ -12,6 +12,28 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@400;700&family=Be+Vietnam+Pro:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap"
     rel="stylesheet">
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- Mobile Timeline Responsive -->
+  <style>
+    @media (max-width: 600px) {
+
+      .timeline-card-left,
+      .timeline-card-right {
+        padding-left: 30px !important;
+        padding-right: 10px !important;
+      }
+
+      .timeline-line {
+        left: 15px !important;
+      }
+
+      .timeline-dot {
+        left: 15px !important;
+      }
+    }
+  </style>
 
   <script>
     $('#homeimg').lazyload(options);
@@ -390,16 +412,7 @@
 
 <body class="fadeOut">
   <div>
-    <nav class="navbar " id="navv" style="z-index: 2;">
-      <div class="container px-4 px-lg-5">
-        <ul class="navbar-nav mx-auto flex-row">
-          <li class="nav-item"><a class="nav-li" href="index.html"> Trang Chủ</a></li>
-          <li class="nav-item"><a class="nav-li" href="ourstory.html">Chuyện Tình</a></li>
-          <li class="nav-item"><a class="nav-li" href="details.html">Chi Tiết Đám Cưới</a></li>
-          <li class="nav-item"><a class="nav-li" href="rsvp.php"> Xác Nhận</a></li>
-        </ul>
-      </div>
-    </nav>
+
 
     <div class="container-fluid home" style="padding:0;">
       <!-- Background elements -->
@@ -552,8 +565,232 @@
       </div>
     </div>
 
+    <!-- SECTION: CHUYỆN TÌNH -->
+    <div class="container-fluid" id="our-story"
+      style="padding: 40px 15px; background: linear-gradient(135deg, #fdf8f3 0%, #f5ebe0 50%, #fae8d4 100%);">
+
+      <!-- Title -->
+      <div class="text-center" style="margin-bottom: 30px;">
+        <h1
+          style="font-family: 'Great Vibes', cursive; font-size: 52px; color: #b76e79; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">
+          Chuyện Tình Của Chúng Tôi
+        </h1>
+        <div
+          style="width: 100px; height: 3px; background: linear-gradient(90deg, #d4a5a5, #c9a86c, #d4a5a5); margin: 20px auto;">
+        </div>
+      </div>
+
+      <!-- Giới thiệu Chú Rể & Cô Dâu -->
+      <div
+        style="max-width: 800px; margin: 0 auto 50px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 20px;">
+
+        <!-- Chú Rể - Trượt từ TRÁI -->
+        <div data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100"
+          style="flex: 1; min-width: 280px; max-width: 350px; text-align: center;">
+          <!-- Ảnh Chú Rể -->
+          <div
+            style="width: 180px; height: 180px; margin: 0 auto 15px; border-radius: 50%; overflow: hidden; border: 4px solid #5a8a9a; box-shadow: 0 8px 25px rgba(90, 138, 154, 0.3);">
+            <img src="resources/groom.jpg" alt="Chú rể - Hữu Kiên" style="width: 100%; height: 100%; object-fit: cover;"
+              onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;background:#e3f2fd;color:#5a8a9a;font-size:48px;\'>🤵</div>';">
+          </div>
+          <h3 style="font-family: 'Great Vibes', cursive; font-size: 36px; color: #5a8a9a; margin-bottom: 8px;">Chú Rể
+          </h3>
+          <h4 style="font-family: 'Dancing Script', cursive; font-size: 28px; color: #3a6a7a; margin-bottom: 10px;">
+            Nguyễn Hữu Kiên</h4>
+          <p
+            style="font-family: 'Be Vietnam Pro', sans-serif; font-size: 14px; color: #5a3a3a; line-height: 1.6; padding: 0 10px;">
+            Con trai của Ông Nguyễn Văn A<br>
+            và Bà Trần Thị B<br>
+            Quê quán: Bắc Ninh
+          </p>
+        </div>
+
+        <!-- Trái Tim ở giữa -->
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500"
+          style="display: flex; flex-direction: column; align-items: center; padding: 0 10px;">
+          <div style="font-size: 60px; animation: heartbeat 1.5s ease-in-out infinite;">💕</div>
+          <div style="font-family: 'Great Vibes', cursive; font-size: 24px; color: #b76e79; margin-top: 5px;">&</div>
+        </div>
+
+        <!-- Cô Dâu - Trượt từ PHẢI -->
+        <div data-aos="fade-left" data-aos-duration="1200" data-aos-delay="100"
+          style="flex: 1; min-width: 280px; max-width: 350px; text-align: center;">
+          <!-- Ảnh Cô Dâu -->
+          <div
+            style="width: 180px; height: 180px; margin: 0 auto 15px; border-radius: 50%; overflow: hidden; border: 4px solid #b76e79; box-shadow: 0 8px 25px rgba(183, 110, 121, 0.3);">
+            <img src="resources/bride.jpg" alt="Cô dâu - Đào Huệ" style="width: 100%; height: 100%; object-fit: cover;"
+              onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;background:#fce4ec;color:#b76e79;font-size:48px;\'>👰</div>';">
+          </div>
+          <h3 style="font-family: 'Great Vibes', cursive; font-size: 36px; color: #b76e79; margin-bottom: 8px;">Cô Dâu
+          </h3>
+          <h4 style="font-family: 'Dancing Script', cursive; font-size: 28px; color: #8b5a5a; margin-bottom: 10px;">
+            Hoàng Thị Đào Huệ</h4>
+          <p
+            style="font-family: 'Be Vietnam Pro', sans-serif; font-size: 14px; color: #5a3a3a; line-height: 1.6; padding: 0 10px;">
+            Con gái của Ông Hoàng Văn C<br>
+            và Bà Nguyễn Thị D<br>
+            Quê quán: Bắc Ninh
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Heartbeat Animation -->
+      <style>
+        @keyframes heartbeat {
+
+          0%,
+          100% {
+            transform: scale(1);
+          }
+
+          25% {
+            transform: scale(1.1);
+          }
+
+          50% {
+            transform: scale(1);
+          }
+
+          75% {
+            transform: scale(1.15);
+          }
+        }
+      </style>
+
+
+      <!-- Story Timeline - 3 Phần -->
+      <div style="max-width: 700px; margin: 0 auto 50px; position: relative;">
+
+        <!-- Timeline Line -->
+        <div
+          style="position: absolute; left: 50%; top: 0; bottom: 0; width: 3px; background: linear-gradient(180deg, #d4a5a5, #c9a86c, #b76e79); transform: translateX(-50%); border-radius: 2px;">
+        </div>
+
+        <!-- PHẦN 1: Lần đầu gặp gỡ - Trượt từ PHẢI -->
+        <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100"
+          style="margin-bottom: 40px; padding-left: 55%; position: relative;">
+          <!-- Timeline Dot -->
+          <div
+            style="position: absolute; left: 50%; top: 20px; width: 20px; height: 20px; background: #b76e79; border: 4px solid #fff; border-radius: 50%; transform: translateX(-50%); box-shadow: 0 2px 10px rgba(183, 110, 121, 0.4); z-index: 2;">
+          </div>
+          <!-- Card -->
+          <div
+            style="background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-radius: 20px; padding: 25px; box-shadow: 0 10px 30px rgba(139, 90, 90, 0.15); border: 1px solid rgba(212, 165, 165, 0.3);">
+            <div style="font-family: 'Great Vibes', cursive; font-size: 28px; color: #b76e79; margin-bottom: 10px;">💕
+              Lần Đầu Gặp Gỡ</div>
+            <p
+              style="font-family: 'Be Vietnam Pro', sans-serif; font-size: 14px; color: #5a3a3a; line-height: 1.8; margin: 0;">
+              Hữu Kiên và Đào Huệ gặp nhau qua sự giới thiệu của bạn bè. Từ những cuộc trò chuyện đầu tiên, họ nhận ra
+              có điều gì đó đặc biệt giữa hai người...
+            </p>
+          </div>
+        </div>
+
+        <!-- PHẦN 2: Lựa chọn nắm tay - Trượt từ TRÁI -->
+        <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200"
+          style="margin-bottom: 40px; padding-right: 55%; position: relative;">
+          <!-- Timeline Dot -->
+          <div
+            style="position: absolute; left: 50%; top: 20px; width: 20px; height: 20px; background: #c9a86c; border: 4px solid #fff; border-radius: 50%; transform: translateX(-50%); box-shadow: 0 2px 10px rgba(201, 168, 108, 0.4); z-index: 2;">
+          </div>
+          <!-- Card -->
+          <div
+            style="background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-radius: 20px; padding: 25px; box-shadow: 0 10px 30px rgba(139, 90, 90, 0.15); border: 1px solid rgba(212, 165, 165, 0.3);">
+            <div style="font-family: 'Great Vibes', cursive; font-size: 28px; color: #c9a86c; margin-bottom: 10px;">💑
+              Lựa Chọn Nắm Tay</div>
+            <p
+              style="font-family: 'Be Vietnam Pro', sans-serif; font-size: 14px; color: #5a3a3a; line-height: 1.8; margin: 0;">
+              Tình yêu không phải lúc nào cũng suôn sẻ như trong phim. Họ đã trải qua nhiều thử thách, nhưng cuối cùng
+              vẫn quyết định nắm tay nhau, cùng bước tiếp...
+            </p>
+          </div>
+        </div>
+
+        <!-- PHẦN 3: Lựa chọn đồng hành - Trượt từ PHẢI -->
+        <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300"
+          style="margin-bottom: 20px; padding-left: 55%; position: relative;">
+          <!-- Timeline Dot -->
+          <div
+            style="position: absolute; left: 50%; top: 20px; width: 20px; height: 20px; background: #8b5a5a; border: 4px solid #fff; border-radius: 50%; transform: translateX(-50%); box-shadow: 0 2px 10px rgba(139, 90, 90, 0.4); z-index: 2;">
+          </div>
+          <!-- Card -->
+          <div
+            style="background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-radius: 20px; padding: 25px; box-shadow: 0 10px 30px rgba(139, 90, 90, 0.15); border: 1px solid rgba(212, 165, 165, 0.3);">
+            <div style="font-family: 'Great Vibes', cursive; font-size: 28px; color: #8b5a5a; margin-bottom: 10px;">💒
+              Lựa Chọn Đồng Hành</div>
+            <p
+              style="font-family: 'Be Vietnam Pro', sans-serif; font-size: 14px; color: #5a3a3a; line-height: 1.8; margin: 0;">
+              Sau nhiều năm bên nhau, họ quyết định tiến đến hôn nhân. Đây là minh chứng rằng tình yêu đích thực luôn
+              chiến thắng mọi khó khăn...
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <!-- End Story Timeline -->
+
+      <!-- Photo Carousel -->
+      <div
+        style="max-width: 700px; margin: 0 auto; background: rgba(255,255,255,0.9); border-radius: 20px; padding: 25px; box-shadow: 0 10px 40px rgba(139, 90, 90, 0.15);">
+        <h3
+          style="font-family: 'Dancing Script', cursive; font-size: 28px; color: #8b5a5a; text-align: center; margin-bottom: 20px;">
+          Ảnh Cưới
+        </h3>
+
+        <div id="storyCarousel" class="carousel slide" data-bs-ride="carousel"
+          style="border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#storyCarousel" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#storyCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#storyCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#storyCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#storyCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="resources/ABC01122.png" class="d-block w-100" alt="Ảnh cưới 1" style="object-fit: cover;"
+                loading="lazy">
+            </div>
+            <div class="carousel-item">
+              <img src="resources/ABC01188.png" class="d-block w-100" alt="Ảnh cưới 2" style="object-fit: cover;"
+                loading="lazy">
+            </div>
+            <div class="carousel-item">
+              <img src="resources/ABC01035.png" class="d-block w-100" alt="Ảnh cưới 3" style="object-fit: cover;"
+                loading="lazy">
+            </div>
+            <div class="carousel-item">
+              <img src="resources/a.jpg" class="d-block w-100" alt="Ảnh cưới 4" style="object-fit: cover;"
+                loading="lazy">
+            </div>
+            <div class="carousel-item">
+              <img src="resources/b.jpg" class="d-block w-100" alt="Ảnh cưới 5" style="object-fit: cover;"
+                loading="lazy">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#storyCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"
+              style="background-color: rgba(183, 110, 121, 0.7); border-radius: 50%; padding: 15px;"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#storyCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"
+              style="background-color: rgba(183, 110, 121, 0.7); border-radius: 50%; padding: 15px;"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+    <!-- END SECTION: CHUYỆN TÌNH -->
+
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- <script src="http://localhost:3002/dist/aos.js"></script> -->
 
