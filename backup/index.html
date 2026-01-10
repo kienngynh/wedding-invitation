@@ -152,13 +152,13 @@
       filter: brightness(80%);
       background-image: url('resources/bg\(300px\).JPG');
 
-      box-shadow: 200px 54px 99px 93px rgba(0,0,0,0.77) inset;
-      -webkit-box-shadow: 200px 54px 99px 93px rgba(0,0,0,0.77) inset;
-      -moz-box-shadow: 200px 54px 99px 93px rgba(0,0,0,0.77) inset;
+      box-shadow: 200px 54px 99px 93px rgba(0, 0, 0, 0.77) inset;
+      -webkit-box-shadow: 200px 54px 99px 93px rgba(0, 0, 0, 0.77) inset;
+      -moz-box-shadow: 200px 54px 99px 93px rgba(0, 0, 0, 0.77) inset;
     }
 
     .welcome {
-      
+
       z-index: 3;
       margin: 7vw;
       margin-top: 10vh;
@@ -173,27 +173,28 @@
       color: #fff5ee;
       text-shadow: 5px 4px 7px rgba(0, 0, 0, 1);
     }
-    .welcome2{
+
+    .welcome2 {
       color: #d2b48c;
       text-shadow: 5px 4px 7px rgba(0, 0, 0, 0.874);
     }
-    
+
     .timer-container {
       width: 100%;
       display: flex;
       justify-content: center;
-  }
+    }
 
-  #timer {
+    #timer {
       width: 100%;
       display: flex;
-      justify-content:left;
+      justify-content: left;
       padding: 1%;
       border-top-right-radius: 1pc;
       border-top-left-radius: 1pc;
-  }
+    }
 
-  .circle {
+    .circle {
       color: #4f4334;
       font-family: 'Shantell Sans', sans-serif;
       width: 55px;
@@ -204,29 +205,29 @@
       align-items: center;
       justify-content: center;
       border-radius: 50%;
-  }
+    }
 
-  .oras {
+    .oras {
       padding: 2%;
       display: flex;
       justify-content: center;
       align-items: center;
 
-  }
+    }
 
-  .oras .center {
+    .oras .center {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-  }
+    }
 
-  .label {
+    .label {
       text-align: center;
       color: #fff3e7;
       font-family: 'Shantell Sans', sans-serif;
       text-shadow: 5px 4px 7px rgba(0, 0, 0, 1);
-  }
+    }
   </style>
   <!-- MAIN CSS -->
 
@@ -283,11 +284,12 @@
         margin-top: 12%;
         font-size: 82px;
       }
-      .welcome2{
+
+      .welcome2 {
         backdrop-filter: blur(2px);
         width: 380px;
         border-radius: 12px;
-        
+
       }
     }
 
@@ -295,18 +297,20 @@
       .homeimg {
         background-image: url('resources/bg\(300px\).JPG');
       }
-     
+
     }
 
     @media (max-width: 500px) {
       .welcome h1 {
         font-size: 42px;
       }
-      .welcome2{
+
+      .welcome2 {
         position: fixed;
         bottom: 0;
       }
-      .circle{
+
+      .circle {
         width: 45px;
         height: 45px
       }
@@ -318,24 +322,24 @@
   </style>
   <script>
     function updateTimer() {
-        future = Date.parse("December 08, 2023 10:30:00");
-        now = new Date();
-        diff = future - now;
+      future = Date.parse("December 08, 2023 10:30:00");
+      now = new Date();
+      diff = future - now;
 
-        days = Math.floor(diff / (1000 * 60 * 60 * 24));
-        hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-        secs = Math.floor((diff % (1000 * 60)) / 1000);
+      days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      secs = Math.floor((diff % (1000 * 60)) / 1000);
 
-        document.getElementById("days").innerHTML = days;
-        document.getElementById("hours").innerHTML = hours;
-        document.getElementById("minutes").innerHTML = mins;
-        document.getElementById("seconds").innerHTML = secs;
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = mins;
+      document.getElementById("seconds").innerHTML = secs;
     }
 
     setInterval(updateTimer, 1000);
 
-</script>
+  </script>
 </head>
 
 <body class="fadeOut">
@@ -387,47 +391,47 @@
     <div class="container-fluid home" style="padding:0; ">
       <div class="welcome">
         <h1 class="h1" id="text">
-         
+
         </h1>
         <div class="d-flex justify-content-center flex-column welcome2" style="">
           <div class="">
-              <h2 class="h2 " style="font-family: 'Goladon', sans-serif; ">Join us on
-                  our big day! </h2>
+            <h2 class="h2 " style="font-family: 'Goladon', sans-serif; ">Join us on
+              our big day! </h2>
 
           </div>
           <div class="timer-container">
-              <div class="timer" id="timer">
-                  <div class="oras">
-                      <div class="center">
-                          <div class="circle" id="days"></div>
-                          <div class="label">Days
-                          </div>
-                      </div>
+            <div class="timer" id="timer">
+              <div class="oras">
+                <div class="center">
+                  <div class="circle" id="days"></div>
+                  <div class="label">Days
                   </div>
-                  <div class="oras">
-                      <div class="center">
-                          <div class="circle" id="hours"></div>
-                          <div class="label">Hours
-                          </div>
-                      </div>
-                  </div>
-                  <div class="oras">
-                      <div class="center">
-                          <div class="circle" id="minutes"></div>
-                          <div class="label">Minutes
-                          </div>
-                      </div>
-                  </div>
-                  <div class="oras">
-                      <div class="center">
-                          <div class="circle" id="seconds"></div>
-                          <div class="label">Seconds
-                          </div>
-                      </div>
-                  </div>
+                </div>
               </div>
+              <div class="oras">
+                <div class="center">
+                  <div class="circle" id="hours"></div>
+                  <div class="label">Hours
+                  </div>
+                </div>
+              </div>
+              <div class="oras">
+                <div class="center">
+                  <div class="circle" id="minutes"></div>
+                  <div class="label">Minutes
+                  </div>
+                </div>
+              </div>
+              <div class="oras">
+                <div class="center">
+                  <div class="circle" id="seconds"></div>
+                  <div class="label">Seconds
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-      </div>
+        </div>
       </div>
       <div class="homeimg" alt=""> </div>
 
@@ -447,29 +451,29 @@
 </body>
 <script>
   var string = "We are Getting Married!"; /* type your text here */
-var array = string.split("");
-var animationFrame;
-var lastFrameTime = 0;
-var delay = 50; // Adjust this value for the desired speed
+  var array = string.split("");
+  var animationFrame;
+  var lastFrameTime = 0;
+  var delay = 50; // Adjust this value for the desired speed
 
-function frameLooper(timestamp) {
+  function frameLooper(timestamp) {
     if (!lastFrameTime) {
-        lastFrameTime = timestamp;
+      lastFrameTime = timestamp;
     }
 
     var elapsed = timestamp - lastFrameTime;
 
     if (elapsed > delay && array.length > 0) {
-        document.getElementById("text").innerHTML += array.shift();
-        lastFrameTime = timestamp;
+      document.getElementById("text").innerHTML += array.shift();
+      lastFrameTime = timestamp;
     }
 
     if (array.length > 0) {
-        animationFrame = requestAnimationFrame(frameLooper);
+      animationFrame = requestAnimationFrame(frameLooper);
     }
-}
+  }
 
-frameLooper();
+  frameLooper();
 
 
 </script>

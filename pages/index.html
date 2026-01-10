@@ -1,53 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You are Invited</title>
-    <link rel="stylesheet" href="style.css">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous">
-    <link
-      href='https://fonts.googleapis.com/css?family=Dancing Script&effect=emboss'
-      rel='stylesheet'>
-    <link href="https://fonts.cdnfonts.com/css/erostulla-monoline"
-      rel="stylesheet">
-    <!-- <link href="https://fonts.cdnfonts.com/css/masconia" rel="stylesheet"> -->
-    <link href="https://fonts.cdnfonts.com/css/goladon" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/enchanted-hermion-script"
-      rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/vinletha-gyldham"
-      rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/love-rose" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiệp Mời Đám Cưới</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Vietnamese-compatible fonts from Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@400;700&family=Be+Vietnam+Pro:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap"
+    rel="stylesheet">
 
-    <link href='https://fonts.googleapis.com/css?family=Dancing Script&effect=emboss' rel='stylesheet'>
-    <link href="https://fonts.cdnfonts.com/css/goladon" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/shantell-sans" rel="stylesheet">
-
-    <link href="https://fonts.cdnfonts.com/css/bacasime-antique"
-      rel="stylesheet">
-
-    <script>
+  <script>
     $('#homeimg').lazyload(options);
   </script>
 
-    <!-- MAIN CSS -->
-    <style>
-      .date{
-        font-family: "Bacasime Antique", sans-serif;
-      }
+  <!-- MAIN CSS -->
+  <style>
+    .date {
+      font-family: 'Cormorant Garamond', serif;
+    }
+
     body {
-      background-color: #264653;
+      background: linear-gradient(135deg, #fdf8f3 0%, #f5ebe0 50%, #fae8d4 100%);
       margin: 0;
       padding: 0;
       animation: fadeInAnimation ease 3s;
       animation-iteration-count: 1;
       animation-fill-mode: forwards;
-      overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: auto;
     }
 
     @keyframes fadeInAnimation {
@@ -63,49 +47,52 @@
     }
 
     .names {
-      color: #fff3e7;
-      font-family: 'Erostulla Monoline', sans-serif;
+      color: #b76e79;
+      font-family: 'Great Vibes', 'Dancing Script', cursive;
       text-align: center;
-      z-index: 1;
-      top: 80px;
+      z-index: 10;
+      position: relative;
+      padding: 0;
+      margin-top: -30px;
+      text-shadow: 1px 1px 2px rgba(183, 110, 121, 0.3);
     }
 
     .tName h1,
     .bName h1 {
-      font-size: 22vw;
+      font-size: 18vw;
+      line-height: 1;
+      margin: 0;
     }
 
     .midName {
-      color: #c19c60;
+      color: #c9a86c;
       text-align: center;
       z-index: 2;
-      font-family: 'Erostulla Monoline', sans-serif;
-      margin-top: -50px;
-      margin-bottom: -50px;
+      font-family: 'Great Vibes', 'Dancing Script', cursive;
+      margin-top: -30px;
+      margin-bottom: -30px;
     }
 
     #navv {
       min-height: 3.5rem;
-      background-color: #152630;
-      -webkit-box-shadow: 0px -50px 50px 26px #152630;
-      box-shadow: 0px -50px 50px 26px #152630;
+      background: linear-gradient(90deg, #d4a5a5 0%, #e8c4c4 50%, #d4a5a5 100%);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
 
     #navv .navbar-toggler {
       font-size: 100%;
       padding: 0.75rem;
-      color: #d2b48c;
-      border: 1px solid #d2b48c;
+      color: #fff;
+      border: 1px solid #fff;
     }
 
     #navv .navbar-toggler:focus {
       outline: none;
-      color: #d2b48c;
+      color: #fff;
     }
 
     #navv .navbar-brand {
-      color: #d2b48c;
-
+      color: #fff;
       font-weight: 700;
       padding: 0.9rem 0;
     }
@@ -118,16 +105,15 @@
 
     #navv .navbar-brand {
       padding: 0.5rem 0;
-      color: #fff3e7;
-
+      color: #5a3a3a;
     }
 
     #navv .nav-li {
-      transition: none;
-      color: #c1997e;
-      font-family: 'Enchanted Hermion Script', sans-serif;
-      font-family: 'Enchanted Hermion Serif', sans-serif;
-
+      transition: all 0.3s ease;
+      color: #5a3a3a;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      padding: 8px 15px;
       display: flex;
       text-decoration: none;
     }
@@ -140,7 +126,9 @@
 
     /* hover li */
     #navv .nav-li:hover {
-      color: #fff3e7;
+      color: #b76e79;
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 20px;
     }
 
     .header {
@@ -155,120 +143,119 @@
     }
 
     .home {
-      height: 66vh;
+      min-height: 70vh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0 0 40px 0;
     }
 
-    
-    .overlay{
-      position: fixed;
-      background: linear-gradient(89deg, rgba(0, 0, 0, 1) 28%, rgba(0, 0, 0, 0.57) 69%, rgba(255, 255, 0, 0) 100%);
-      z-index: 1;
-      height: 65%;
-      width: 40%;
-      left: 0;
-      bottom: 0;
-    }
-      .homeimg {
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 100%;
-      background-position-x: right;
-      background-position-y: center;
-      filter: brightness(80%);
-      background-image: url('resources/bg\(300px\).JPG');
 
-      box-shadow: 200px 54px 99px 93px rgba(0,0,0,0.77) inset;
-      -webkit-box-shadow: 200px 54px 99px 93px rgba(0,0,0,0.77) inset;
-      -moz-box-shadow: 200px 54px 99px 93px rgba(0,0,0,0.77) inset;
+    .overlay {
+      display: none;
     }
+
+    .homeimg {
+      display: none;
+    }
+
     .welcome {
-      
-      z-index: 3;
-      margin: 7vw;
-      margin-top: 10vh;
-      /* top: 23%; */
-      position: absolute;
+      z-index: 5;
+      padding: 20px;
+      text-align: center;
+      margin-top: 10px;
     }
 
     .welcome h1 {
       z-index: 3;
       font-size: 32px;
-      font-family: 'love rose', sans-serif;
-      color: #fff5ee;
-      text-shadow: 5px 4px 7px rgba(0, 0, 0, 1);
+      font-family: 'Dancing Script', cursive;
+      color: #8b5a5a;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     }
-    .welcome2{
-      color: #d2b48c;
-      text-shadow: 5px 4px 7px rgba(0, 0, 0, 0.874);
-      position:  absolute ;
-      right: auto;
-      z-index: 2;
-      left: 40%;
-      bottom: 4%;
+
+    .welcome2 {
+      color: #5a3a3a;
+      text-shadow: none;
+      position: relative;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 25px;
+      margin: 20px auto;
+      max-width: 450px;
+      width: 90%;
+      box-shadow: 0 10px 40px rgba(139, 90, 90, 0.2);
+      border: 1px solid rgba(212, 165, 165, 0.3);
     }
+
     .timer-container {
       width: 100%;
       display: flex;
       justify-content: center;
-  }
+    }
 
-  #timer {
+    #timer {
       width: 100%;
       display: flex;
-      justify-content:center;
+      justify-content: center;
       padding: 1%;
       border-top-right-radius: 1pc;
       border-top-left-radius: 1pc;
-  }
+    }
 
-  .circle {
-      color: #4f4334;
-      font-family: 'Shantell Sans', sans-serif;
+    .circle {
+      color: #5a3a3a;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-weight: 600;
       width: 55px;
       height: 55px;
-      background-color: #d2b48c;
-      box-shadow: #000000 1px 1px 5px 0px;
+      background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+      box-shadow: 0 4px 15px rgba(212, 165, 165, 0.3);
       display: flex;
       align-items: center;
       justify-content: center;
       border-radius: 50%;
-  }
+    }
 
-  .oras {
+    .oras {
       padding: 2%;
       display: flex;
       justify-content: center;
       align-items: center;
 
-  }
+    }
 
-  .oras .center {
+    .oras .center {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-  }
+    }
 
-  .label {
+    .label {
       text-align: center;
-      color: #fff3e7;
-      font-family: 'love rose', sans-serif;
-      text-shadow: 5px 4px 7px rgba(0, 0, 0, 1);
-  }
+      color: #8b5a5a;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-weight: 500;
+      text-shadow: none;
+    }
   </style>
-    <!-- MAIN CSS -->
+  <!-- MAIN CSS -->
 
-    <style>
+  <style>
     @media (min-width: 330px) {
-      .overlay{
+      .overlay {
         background-color: rgba(255, 0, 0, 0);
         background-image:
-          linear-gradient(
-            rgba(0, 0, 0, 0), #000000
-          );
-    width: 100%;
-    height: 20%;
+          linear-gradient(rgba(0, 0, 0, 0), #000000);
+        width: 100%;
+        height: 20%;
       }
+
       .header {
         height: 240px;
         -webkit-box-shadow: inset 0px -50px 29px -11px #152630;
@@ -296,7 +283,7 @@
 
       .names {
         color: #fff3e7;
-        font-family: 'Erostulla Monoline', sans-serif;
+        font-family: 'Great Vibes', 'Dancing Script', cursive;
         text-align: center;
         top: 80px;
       }
@@ -310,7 +297,7 @@
         color: #c19c60;
         text-align: center;
         z-index: 2;
-        font-family: 'Erostulla Monoline', sans-serif;
+        font-family: 'Great Vibes', 'Dancing Script', cursive;
         margin-top: -50px;
         margin-bottom: -50px;
       }
@@ -319,11 +306,10 @@
         margin-top: 12%;
         font-size: 89px;
       }
-      .welcome2{
-        backdrop-filter: blur(2px);
-       left: 20%;
-        border-radius: 12px;
-        
+
+      .welcome2 {
+        backdrop-filter: blur(5px);
+        max-width: 400px;
       }
     }
 
@@ -331,208 +317,279 @@
       .homeimg {
         background-image: url('resources/bg\(300px\).JPG');
       }
-     
+
     }
 
     @media (max-width: 500px) {
       .welcome h1 {
-        font-size: 42px;
+        font-size: 32px;
       }
-      .welcome2{
-        left: 10%;
-        bottom: 1%;
+
+      .welcome2 {
+        max-width: 95%;
+        padding: 15px;
+        margin: 10px auto;
       }
-      .circle{
-        width: 45px;
-        height: 45px
+
+      .circle {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+      }
+
+      .label {
+        font-size: 12px;
+      }
+
+      .names h1 {
+        font-size: 50px !important;
+      }
+
+      .tName h1,
+      .bName h1 {
+        font-size: 15vw;
       }
     }
 
     @media (min-width: 1000px) {
-      .welcome2{
-        left: 9%;
-        bottom: 4%;
-        
+      .welcome2 {
+        max-width: 500px;
       }
     }
   </style>
-    <script>
-    function updateTimaer() {
-        future = Date.prse("December 08, 2023 10:30:00");
-        now = new Date();
-        diff = future - now;
+  <script>
+    function updateTimer() {
+      // Đếm ngược đến Lễ thành hôn: 15h00 ngày 26/01/2026
+      future = Date.parse("January 26, 2026 15:00:00");
+      now = new Date();
+      diff = future - now;
 
-        days = Math.floor(diff / (1000 * 60 * 60 * 24));
-        hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-        secs = Math.floor((diff % (1000 * 60)) / 1000);
+      if (diff <= 0) {
+        document.getElementById("days").innerHTML = "0";
+        document.getElementById("hours").innerHTML = "0";
+        document.getElementById("minutes").innerHTML = "0";
+        document.getElementById("seconds").innerHTML = "0";
+        return;
+      }
 
-        document.getElementById("days").innerHTML = days;
-        document.getElementById("hours").innerHTML = hours;
-        document.getElementById("minutes").innerHTML = mins;
-        document.getElementById("seconds").innerHTML = secs;
+      days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = mins;
+      document.getElementById("seconds").innerHTML = secs;
     }
 
     setInterval(updateTimer, 1000);
 
-</script>
-  </head>
+  </script>
+</head>
 
-  <body class="fadeOut">
-    <div class="names position-absolute " style="z-index: 9; left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto; ">
+<body class="fadeOut">
+  <div>
+    <nav class="navbar " id="navv" style="z-index: 2;">
+      <div class="container px-4 px-lg-5">
+        <ul class="navbar-nav mx-auto flex-row">
+          <li class="nav-item"><a class="nav-li" href="index.html"> Trang Chủ</a></li>
+          <li class="nav-item"><a class="nav-li" href="ourstory.html">Chuyện Tình</a></li>
+          <li class="nav-item"><a class="nav-li" href="details.html">Chi Tiết Đám Cưới</a></li>
+          <li class="nav-item"><a class="nav-li" href="rsvp.php"> Xác Nhận</a></li>
+        </ul>
+      </div>
+    </nav>
 
-      <span>
+    <div class="container-fluid home" style="padding:0;">
+      <!-- Background elements -->
+      <div class="homeimg"></div>
+      <div class="overlay"></div>
 
-        <div class="name tName">
-          <h1 class="h1">
-            YnnTezhar
-          </h1>
-
-        </div>
-        <div class="name midName">
-          <h2 class="h2" style="
-        font-size: 62px;">
-            and
-          </h2>
-
-        </div>
-        <div class="name bName">
-          <h1 class="h1">
-            JayLord
-          </h1>
-        </div>
-
-      </span>
-    </div>
-    <div class="container-fluid header ">
-
-    </div>
-
-    <div>
-      <nav class="navbar " id="navv" style="z-index: 2;">
-        <div class="container px-4 px-lg-5">
-          <ul class="navbar-nav mx-auto flex-row"> <!-- Added flex-row class -->
-            <li class="nav-item"><a class="nav-li" href="index.html"> Home</a></li>
-            <li class="nav-item"><a class="nav-li" href="ourstory.html">Our
-                Story</a></li>
-            <li class="nav-item"><a class="nav-li" href="details.html">Wedding
-                Details</a></li>
-            <li class="nav-item"><a class="nav-li" href="rsvp.php"> RSVP</a></li>
-          </ul>
-        </div>
-      </nav>
-
-      <div class="container-fluid home" style="padding:0; ">
-
-        <div class="welcome">
-          <h1 class="h1" id="text">
-
-          </h1>
-          
-        </div>
-
-        <div class="homeimg" alt> </div>
-
-        <div
-          class="d-flex  flex-column welcome2"
-          style>
-          <div class>
-            <h2 class="h2 text-center"
-              style=" font-size:39px; font-family: 'love rose', sans-serif; ">Join
-              us on
-              our big day! </h2>
-            <h3 class="text-center"
-              class="date" style="color:#fff;
-              font-family: 'Bacasime Antique', sans-serif;">
-              December 08, 2023
-            </h3>
-          </div>
-
-          <div class="timer-container ">
-            <div class="timer text-center" id="timer">
-              <div class="oras">
-                <div class="center">
-                  <div class="circle" id="days"></div>
-                  <div class="label">Days
-                  </div>
-                </div>
-              </div>
-              <div class="oras">
-                <div class="center">
-                  <div class="circle" id="hours"></div>
-                  <div class="label">Hours
-                  </div>
-                </div>
-              </div>
-              <div class="oras">
-                <div class="center">
-                  <div class="circle" id="minutes"></div>
-                  <div class="label">Minutes
-                  </div>
-                </div>
-              </div>
-              <div class="oras">
-                <div class="center">
-                  <div class="circle" id="seconds"></div>
-                  <div class="label">Seconds
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <h2 class="mx-auto" style="color:#72b3cc;     font-family: 'Dancing Script';"> #crazYNNinlovewithJAY </h2>
-        </div>
-        <div class="overlay">
-
-        </div>
-
-        <div class="position-absolute" style="right: 0; bottom:0; z-index: 1; ">
-         
+      <!-- Home Image Placeholder (2656x3984 - Portrait) -->
+      <div class="home-image-container" style="
+        width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
+        position: relative;
+        z-index: 5;
+      ">
+        <img src="resources/home-image.jpg" alt="Ảnh cưới Hữu Kiên & Đào Huệ" style="
+               width: 100%;
+               height: auto;
+               border-radius: 20px;
+               box-shadow: 0 10px 40px rgba(183, 110, 121, 0.3);
+               border: 4px solid #d4a5a5;
+               object-fit: cover;
+             " onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <!-- Placeholder nếu chưa có ảnh -->
+        <div style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          aspect-ratio: 2656 / 3984;
+          background: linear-gradient(135deg, #fce4ec 0%, #f8bbd9 100%);
+          border-radius: 20px;
+          border: 4px dashed #d4a5a5;
+          color: #b76e79;
+          font-family: 'Be Vietnam Pro', sans-serif;
+        ">
+          <div style="font-size: 48px;">📷</div>
+          <div style="font-size: 14px; margin-top: 10px;">Chèn ảnh tại đây</div>
+          <div style="font-size: 12px; color: #d4a5a5;">(2656 x 3984 px)</div>
         </div>
       </div>
 
+      <!-- Names Section -->
+      <div class="names">
+        <div class="name tName">
+          <h1 class="h1" style="color: #b76e79;">Hữu Kiên</h1>
+        </div>
+        <div class="name midName">
+          <h2 class="h2" style="font-size: 62px; color: #d4a5a5;">&</h2>
+        </div>
+        <div class="name bName">
+          <h1 class="h1" style="color: #b76e79;">Đào Huệ</h1>
+        </div>
+      </div>
+
+      <!-- Welcome Text -->
+      <div class="welcome">
+        <h1 class="h1" id="text"></h1>
+      </div>
+
+      <div class="d-flex flex-column welcome2">
+        <div class>
+          <h2 class="h2 text-center" style=" font-size:36px; font-family: 'Dancing Script', cursive; ">Trân trọng kính
+            mới quý khách đến dự bữa cơm thân mật chung vui cùng gia đình chúng tôi!</h2>
+
+          <!-- 3 Sự kiện đám cưới -->
+          <div style="margin-top: 15px; font-family: 'Be Vietnam Pro', sans-serif; font-size: 14px;">
+            <!-- Tiệc Nhà Gái -->
+            <div
+              style="background: linear-gradient(135deg, #fce4ec 0%, #f8bbd9 100%); border-radius: 12px; padding: 15px; margin-bottom: 12px; box-shadow: 0 4px 15px rgba(212, 165, 165, 0.2);">
+              <div style="color: #8b5a5a; font-weight: 600; font-size: 16px;">🏠 Tiệc Nhà Gái</div>
+              <div style="color: #5a3a3a; margin: 5px 0;">📅 15:00 - Ngày 25/01/2026</div>
+              <div style="color: #7a5a5a; font-size: 13px; margin-bottom: 8px;">📍 [Nhà văn hóa thôn Quyết Tiến,
+                phường Tiền Phong, tỉnh Bắc Ninh]</div>
+              <a href="https://maps.app.goo.gl/BrGhMWm6M1w3j3VFA" target="_blank"
+                style="display: inline-block; background: #d4a5a5; color: #fff; padding: 6px 14px; border-radius: 20px; text-decoration: none; font-size: 12px; font-weight: 500;">
+                🗺️ Xem bản đồ
+              </a>
+            </div>
+
+            <!-- Tiệc Nhà Trai -->
+            <div
+              style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-radius: 12px; padding: 15px; margin-bottom: 12px; box-shadow: 0 4px 15px rgba(100, 150, 200, 0.2);">
+              <div style="color: #5a6a8a; font-weight: 600; font-size: 16px;">🏠 Tiệc Nhà Trai</div>
+              <div style="color: #3a4a6a; margin: 5px 0;">📅 18:00 - Ngày 25/01/2026</div>
+              <div style="color: #5a6a8a; font-size: 13px; margin-bottom: 8px;">📍 [Nhà văn hóa xóm Chinh, thị trấn Lim,
+                huyện Tiên Du, tỉnh Bắc Ninh]</div>
+              <a href="https://maps.app.goo.gl/Da7Zji5h6ttV9C7b6" target="_blank"
+                style="display: inline-block; background: #90caf9; color: #3a4a6a; padding: 6px 14px; border-radius: 20px; text-decoration: none; font-size: 12px; font-weight: 500;">
+                🗺️ Xem bản đồ
+              </a>
+            </div>
+
+            <!-- Lễ Thành Hôn -->
+            <div
+              style="background: linear-gradient(135deg, #fff8e1 0%, #ffe082 100%); border-radius: 12px; padding: 15px; border: 2px solid #c9a86c; box-shadow: 0 4px 20px rgba(201, 168, 108, 0.3);">
+              <div style="color: #8b6914; font-weight: 700; font-size: 17px;">💒 Lễ Thành Hôn</div>
+              <div style="color: #5a4a14; font-weight: 500; margin: 5px 0;">📅 15:00 - Ngày 26/01/2026</div>
+              <div style="color: #7a6a34; font-size: 13px; margin-bottom: 8px;">📍 [Tại nhà trai: xóm Chinh, thôn Lũng
+                Giang, thị trấn Lim, huyện Tiên Du, tỉnh Bắc Ninh]</div>
+              <a href="https://maps.app.goo.gl/aKynYgZWYqwKoFuU9" target="_blank"
+                style="display: inline-block; background: #c9a86c; color: #fff; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 13px; font-weight: 600;">
+                🗺️ Xem bản đồ
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="timer-container ">
+          <div class="timer text-center" id="timer">
+            <div class="oras">
+              <div class="center">
+                <div class="circle" id="days"></div>
+                <div class="label">Ngày
+                </div>
+              </div>
+            </div>
+            <div class="oras">
+              <div class="center">
+                <div class="circle" id="hours"></div>
+                <div class="label">Giờ
+                </div>
+              </div>
+            </div>
+            <div class="oras">
+              <div class="center">
+                <div class="circle" id="minutes"></div>
+                <div class="label">Phút
+                </div>
+              </div>
+            </div>
+            <div class="oras">
+              <div class="center">
+                <div class="circle" id="seconds"></div>
+                <div class="label">Giây
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <h2 class="mx-auto" style="color:#72b3cc;     font-family: 'Dancing Script';"> #HữuKiênĐàoHuệ </h2>
+      </div>
+      <div class="overlay">
+
+      </div>
+
+      <div class="position-absolute" style="right: 0; bottom:0; z-index: 1; ">
+
+      </div>
     </div>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- <script src="http://localhost:3002/dist/aos.js"></script> -->
+  </div>
 
-    <script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- <script src="http://localhost:3002/dist/aos.js"></script> -->
+
+  <script>
     AOS.init({
       easing: 'ease-out-back',
       duration: 3000
     });
   </script>
-    <script src="scripts.js"></script>
-  </body>
-  <script>
-  var string = "We are Getting Married!"; /* type your text here */
-var array = string.split("");
-var animationFrame;
-var lastFrameTime = 0;
-var delay = 50; // Adjust this value for the desired speed
+  <script src="scripts.js"></script>
+</body>
+<script>
+  var string = "Lễ Thành Hôn!"; /* Chữ chạy */
+  var array = string.split("");
+  var animationFrame;
+  var lastFrameTime = 0;
+  var delay = 50; // Adjust this value for the desired speed
 
-function frameLooper(timestamp) {
+  function frameLooper(timestamp) {
     if (!lastFrameTime) {
-        lastFrameTime = timestamp;
+      lastFrameTime = timestamp;
     }
 
     var elapsed = timestamp - lastFrameTime;
 
     if (elapsed > delay && array.length > 0) {
-        document.getElementById("text").innerHTML += array.shift();
-        lastFrameTime = timestamp;
+      document.getElementById("text").innerHTML += array.shift();
+      lastFrameTime = timestamp;
     }
 
     if (array.length > 0) {
-        animationFrame = requestAnimationFrame(frameLooper);
+      animationFrame = requestAnimationFrame(frameLooper);
     }
-}
+  }
 
-frameLooper();
+  frameLooper();
 
 
 </script>
